@@ -11,7 +11,9 @@ o = torch.tanh(n)
 print(o.data.item())
 o.backward()
 
-print('x2', x2.data.item())
-print('w2', w2.data.item())
-print('x1', x1.data.item())
-print('w1', w1.data.item())
+print('x2', x2.grad.item())
+print('w2', w2.grad.item())
+print('x1', x1.grad.item())
+print('w1', w1.grad.item())
+
+print(o)

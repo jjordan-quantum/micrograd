@@ -48,6 +48,9 @@ class Value:
     def __rmul__(self, other):
         return self * other
 
+    def __radd__(self, other):  # other + self
+        return self + other
+
     def __truediv__(self, other):
         return self * other**-1
 
